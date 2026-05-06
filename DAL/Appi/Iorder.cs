@@ -1,0 +1,14 @@
+﻿using DAL.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DAL.Appi
+{
+    public interface Iorder:ICrud<Order>
+    {
+        Customer GetCustomerByOrderId(int orderId);
+    }
+}
